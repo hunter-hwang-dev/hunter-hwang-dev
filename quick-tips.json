@@ -22,6 +22,18 @@
         question: "Java에서 int와 Integer의 차이를 알려주세요.",
         answer: "int는 기본형(primitive type)으로 null을 집어넣을 수 없어요! 하지만 Integer는 참조형(wrapper class)이라서, null을 담을 수 있어요.",
         hashtags: "#Java #data-type #int #primitive-type #Integer #wrapper-class"
+    },
+
+    {
+        question: "Github Issues로 프로젝트를 관리하고 싶은데, 설정 어디에 있죠?",
+        answer: "Settings > General > Features에서 Issues 체크박스를 체크하세요!",
+        hashtags: "#Github #Issues #where-it-is"
+    },
+
+    {
+        question: "Github Wiki 설정을 켜려면 어디로 가야 하죠?",
+        answer: "Settings > General > Features에서 Wikis 체크박스를 체크하시면 됩니다.",
+        hashtags: "#Github #Wikis #where-it-is"
     }
 
  ]
