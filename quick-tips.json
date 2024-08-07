@@ -1,4 +1,4 @@
- [
+[
     {
         question: "왜 Java에서 boolean은 true 또는 false 두 개의 값만 가지는데, 차지하는 비용은 1 byte인가요?",
         answer: "1bit가 아닌 8bit = 1byte를 차지하는 이유는 메모리 접근을 1byte씩 하고, 실제 하드웨어도 1byte 단위를 생각해 만들어졌어요. 아주 옛날이라면 모르겠지만, 지금은 1bit에 접근하는게 코스트가 더 많이 듭니다!",
@@ -47,6 +47,18 @@
         question: "Github에서 default 브랜치를 변경하려면?",
         answer: "Settings > General > Default branch의 Switch to another branch 버튼을 눌러, 새 default 브랜치를 고르세요.",
         hashtags: "#Github #Branches #default-branch #where-it-is"
+    },
+
+    {
+        question: "터미널에서 브랜치 변경하는 법",
+        answer: "프로젝트 폴더 우클릭 > Git Bash Here (전 Git Bash를 씁니다) 로 터미널 열기 >  Settings > General > Default branch의 Switch to another branch 버튼을 눌러, 새 default 브랜치를 고르세요.",
+        hashtags: "#Github #Branches #default-branch #where-it-is"
+    },
+        
+    {
+        question: "Github 웹페이지에서 추가한 브랜치가 VS Code에서 확인되지 않아요!",
+        answer: "Source Control > Source Control Repositories 가 켜져 있는지 확인해 보세요. 켜져 있다면, 브랜치 이름을 눌러 local 및 remote 브랜치들을 확인할 수 있습니다.",
+        hashtags: "#Github #git-fetch"
     }
 
  ]
