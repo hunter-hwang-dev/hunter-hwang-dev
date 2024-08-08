@@ -86,6 +86,12 @@
         "answer": "Stack<String> stack = new Stack<>(); stack.push(\"first\"); System.out.println(\"삽입 : \" + stack.peek() ); for( String item : stack ) {System.out.println(item);} while( !stack.isEmpty() ) {  System.out.println( stack.pop() ); } System.out.println(\"Stack이 비었습니까 : \" + stack.isEmpty());",
         "hashtags": "#Java #data-structure #Stack",
         "createdAt": "2024-08-08"
-    }
+    },
 
+    {
+        "question": "Wrapper Class",
+        "answer": "Character, Integer는 char, int와 달리 끝까지 적어줘요!",
+        "hashtags": "#Java #data-type #wrapper-class #Character #Integer",
+        "createdAt": "2024-08-08"
+    }
  ]
