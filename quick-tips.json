@@ -83,7 +83,7 @@
 
     {
         "question": "Java에서 Stack 사용하기",
-        "answer": "Stack<String> stack = new Stack<>(); stack.push(\"first\"); System.out.println(\"삽입 : \" + stack.peek() ); for( String item : stack ) {System.out.println(item);} while( !stack.isEmpty() ) {  System.out.println( stack.pop() ); } System.out.println(\"Stack이 비었습니까 : \" + stack.isEmpty());",
+        "answer": "프로그래머스(OpenJDK 14.0.2) 기준 import java.util.Stack; 을 해줘야 하네요. 귀찮다. Stack<String> stack = new Stack<>(); stack.push(\"first\"); System.out.println(\"삽입 : \" + stack.peek() ); for( String item : stack ) {System.out.println(item);} while( !stack.isEmpty() ) {  System.out.println( stack.pop() ); } System.out.println(\"Stack이 비었습니까 : \" + stack.isEmpty());",
         "hashtags": "#Java #data-structure #Stack",
         "createdAt": "2024-08-08"
     },
@@ -93,5 +93,12 @@
         "answer": "Character, Integer는 char, int와 달리 끝까지 적어줘요!",
         "hashtags": "#Java #data-type #wrapper-class #Character #Integer",
         "createdAt": "2024-08-08"
+    }
+
+    {
+        "question": "Stack<Integer>를 IntArray로 바꾸고 싶어요!",
+        "answer": "방법 1) Stack<Integer> > Object[] > int[] | Object[] objArray = stack.toArray(); int[] intArray = new int[objArray.length]; for(int i=0; i<objArray.length; i++) {intArray[i] = (Integer) objArray[i];\n방법2: Stream API 사용하기 | int[] intArray = stack.stream().mapToInt(Integer::intValue).toArray();",
+        "hashtags": "#Java #type-casting #Stack #wrapper-class",
+        "createdAt": "2024-08-09"
     }
  ]
