@@ -93,12 +93,50 @@
         "answer": "Character, Integer는 char, int와 달리 끝까지 적어줘요!",
         "hashtags": "#Java #data-type #wrapper-class #Character #Integer",
         "createdAt": "2024-08-08"
-    }
+    },
 
     {
         "question": "Stack<Integer>를 IntArray로 바꾸고 싶어요!",
         "answer": "방법 1) Stack<Integer> > Object[] > int[] | Object[] objArray = stack.toArray(); int[] intArray = new int[objArray.length]; for(int i=0; i<objArray.length; i++) {intArray[i] = (Integer) objArray[i];\n방법2: Stream API 사용하기 | int[] intArray = stack.stream().mapToInt(Integer::intValue).toArray();",
         "hashtags": "#Java #type-casting #Stack #wrapper-class",
-        "createdAt": "2024-08-09"
+        "createdAt": "2024-08-09",
+        "related-tips": "stream()을 막 남용해도 될까요?"
+    },
+
+    {
+        "question": "stream()이 뭐에요?",
+        "answer": "람다식 쓰기 전 몸풀기에여!",
+        "hashtags": "#Java #stream #lambda",
+        "createdAt": "2024-08-09",
+        "revisedAt": "",
+        "related-tips": "Stack<Integer>를 IntArray로 바꾸고 싶어요!"
+    },
+
+    {
+        "question": "Java에서 Queue 쓰는 법!",
+        "answer": "Queue<자료형> 변수명 = new LinkedList<>(); Queue 변수명 = new LinkedList();",
+        "hashtags": "#Java #queue #LinkedList",
+        "createdAt": "2024-08-09",
+        "revisedAt": "",
+        "related-tips": "Stack<Integer>를 IntArray로 바꾸고 싶어요!"
+    },
+
+    {
+        "question": "Java에서 HashSet 쓰는 법!",
+        "answer": "HashSet<Wrapper Class Type> 변수명 = new HashSet<Wrapper Class Type, 생략가능>(); set.contains(1)",
+        "hashtags": "#Java #data-type #HashSet",
+        "createdAt": "2024-08-09",
+        "revisedAt": "",
+        "related-tips": ""
+    },
+
+    
+    {
+        "question": "Java에서 HashMap 쓰는 법!",
+        "answer": "HashMap<String, Integer> map1 = new HashMap<String,Integer>();//HashMap생성 HashMap<String,Integer> map2 = new HashMap<>(); //타입 파라미터 생략 HashMap<String,Integer> map3 = new HashMap<>(10);//초기 용량 설정",
+        "hashtags": "#Java #data-type #HashMap",
+        "createdAt": "2024-08-09",
+        "revisedAt": "",
+        "related-tips": ""
     }
- ]
+]
