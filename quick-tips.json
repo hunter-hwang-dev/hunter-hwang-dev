@@ -59,18 +59,32 @@
         "question": "Github 웹페이지에서 추가한 브랜치가 VS Code에서 확인되지 않아요!",
         "answer": "Source Control > Source Control Repositories 가 켜져 있는지 확인해 보세요. 켜져 있다면, 브랜치 이름을 눌러 local 및 remote 브랜치들을 확인할 수 있습니다.",
         "hashtags": "#Github #git-fetch"
-    }
+    },
 
     {
         "question": "Github 웹페이지에서 추가한 브랜치가 VS Code에서 확인되지 않아요!",
         "answer": "Source Control > Source Control Repositories 가 켜져 있는지 확인해 보세요. 켜져 있다면, 브랜치 이름을 눌러 local 및 remote 브랜치들을 확인할 수 있습니다.",
         "hashtags": "#Github #git-fetch"
-    }
+    },
 
     {
         "question": "Java에서 String을 char 단위로 끊어 확인하는 법?",
         "answer": "1) String.charAt(인덱스); 2) String.toCharArray(); 를 사용 가능하다. cf) Kotlin은 for (c in string) { ... } 같이 작성이 가능하지만, Java는 타입 문제가 일어난다.",
         "hashtags": "#Java #type-casting #data-type #String #char",
+        "createdAt": "2024-08-08"
+    },
+
+    {
+        "question": "JCF? 자바 컬렉션 프레임워크?",
+        "answer": "Collection: List(LinkedList, Stack, Vector, ArrayList), Set(HashSet, SortedSet(TreeSet)) Map: Hashtable, HashMap, SortedMap (TreeMap)",
+        "hashtags": "#Java #data-structure #JCF",
+        "createdAt": "2024-08-08"
+    },
+
+    {
+        "question": "Java에서 Stack 사용하기",
+        "answer": "Stack<String> stack = new Stack<>(); stack.push(\"first\"); System.out.println(\"삽입 : \" + stack.peek() ); for( String item : stack ) {System.out.println(item);} while( !stack.isEmpty() ) {  System.out.println( stack.pop() ); } System.out.println(\"Stack이 비었습니까 : \" + stack.isEmpty());",
+        "hashtags": "#Java #data-structure #Stack",
         "createdAt": "2024-08-08"
     }
 
