@@ -1,4 +1,4 @@
-[
+const quickTips = [
     {
         "question": "왜 Java에서 boolean은 true 또는 false 두 개의 값만 가지는데, 차지하는 비용은 1 byte인가요?",
         "answer": "1bit가 아닌 8bit = 1byte를 차지하는 이유는 메모리 접근을 1byte씩 하고, 실제 하드웨어도 1byte 단위를 생각해 만들어졌어요. 아주 옛날이라면 모르겠지만, 지금은 1bit에 접근하는게 코스트가 더 많이 듭니다!",
@@ -97,7 +97,14 @@
 
     {
         "question": "Stack<Integer>를 IntArray로 바꾸고 싶어요!",
-        "answer": "방법 1) Stack<Integer> > Object[] > int[] | Object[] objArray = stack.toArray(); int[] intArray = new int[objArray.length]; for(int i=0; i<objArray.length; i++) {intArray[i] = (Integer) objArray[i];\n방법2: Stream API 사용하기 | int[] intArray = stack.stream().mapToInt(Integer::intValue).toArray();",
+        "answer": "방법 1) Stack<Integer> > Object[] > int[]\n" +
+        "Object[] objArray = stack.toArray();\n" +
+        "int[] intArray = new int[objArray.length];\n" +
+        "for(int i=0; i<objArray.length; i++)\n" +
+        "   {intArray[i] = (Integer) objArray[i];\n" +
+ 
+        "방법2: Stream API 사용하기 \n" +
+        "int[] intArray = stack.stream().mapToInt(Integer::intValue).toArray();",
         "hashtags": "#Java #type-casting #Stack #wrapper-class",
         "createdAt": "2024-08-09",
         "related-tips": "stream()을 막 남용해도 될까요?"
@@ -133,7 +140,12 @@
     
     {
         "question": "Java에서 HashMap 쓰는 법!",
-        "answer": "HashMap<String, Integer> map1 = new HashMap<String,Integer>();//HashMap생성 HashMap<String,Integer> map2 = new HashMap<>(); //타입 파라미터 생략 HashMap<String,Integer> map3 = new HashMap<>(10);//초기 용량 설정",
+        "answer": 
+
+        "HashMap<String, Integer> map1 = new HashMap<String,Integer>();//HashMap생성" + 
+        "HashMap<String,Integer> map2 = new HashMap<>(); //타입 파라미터 생략" +
+        "HashMap<String,Integer> map3 = new HashMap<>(10);//초기 용량 설정",
+
         "hashtags": "#Java #data-type #HashMap",
         "createdAt": "2024-08-09",
         "revisedAt": "",
