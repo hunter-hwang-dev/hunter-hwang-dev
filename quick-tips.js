@@ -130,7 +130,24 @@ const quickTips = [
 
     {
         "question": "Java에서 HashSet 쓰는 법!",
-        "answer": "HashSet<Wrapper Class Type> 변수명 = new HashSet<Wrapper Class Type, 생략가능>(); set.contains(1)",
+        "answer": 
+        "HashSet<Wrapper Class Type> 변수명  = new HashSet<Wrapper Class Type, 생략가능>();\n\n" +
+
+        "(예시)\n" +
+
+        "HashSet<String> set  = new HashSet<>();\n" +
+
+        "set.add(\"hello\"); //set에 hello 추가\n" +
+        "set.add(\"world\"); //set에 world 추가\n" +
+
+        "for (String i: set) {\n" +
+        "    System.out.println(i); } //hello, world 출력\n" +
+
+        "set.contains(\"hello\") //hello가 들어 있으므로 true\n" +
+        "set.remove(\"hello\") //set에서 hello 삭제\n" + 
+        "set.size(); //1\n" +
+        "set.remove(); //들어있는 항 다 삭제\n",
+
         "hashtags": "#Java #data-type #HashSet",
         "createdAt": "2024-08-09",
         "revisedAt": "",
