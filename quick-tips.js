@@ -161,11 +161,51 @@ const quickTips = [
 
         "HashMap<String, Integer> map1 = new HashMap<String,Integer>();//HashMap생성" + 
         "HashMap<String,Integer> map2 = new HashMap<>(); //타입 파라미터 생략" +
-        "HashMap<String,Integer> map3 = new HashMap<>(10);//초기 용량 설정",
+        "HashMap<String,Integer> map3 = new HashMap<>(10);//초기 용량 설정" +
+        "map.add(...) 안되고 map.put(...) 써야 함." +
+        "map.containsKey(key) + map.replace(key, map.get(key) + ...) 조합 코테 할 때 유용하게 사용 중.",
 
         "hashtags": "#Java #data-type #HashMap",
         "createdAt": "2024-08-09",
         "revisedAt": "",
         "related-tips": ""
+    },
+
+    {
+        "question": "String[] numString = new String[]; 이 안되는 이유",
+        "answer": "Array라서 항 갯수를 지정해 주어야 해요!",
+        "hashtags": "#Java #data-type #Array",
+        "createdAt": "2024-08-09",
+        "revisedAt": "",
+        "related-tips": ""
+    },
+
+    {
+        "question": "int[]를 사전순으로 정렬하려면? String[]으로 꼭 바꿔야 하나?",
+        "answer": "넵.\n" +
+
+        "import java.util.Arrays;\n" + 
+
+        "String[] stringArray = Arrays.stream(numbers)    // int[] -> IntStream\n" +
+        "                    .mapToObj(String::valueOf)  // IntStream -> Stream<String>\n" +
+        "                    .toArray(String[]::new);    // Stream<String> -> String[]\n" +
+        "Arrays.sort(stringArray);",
+
+        "hashtags": "#Java #sort #data-type",
+        "createdAt": "2024-08-10",
+        "revisedAt": "",
+        "related-tips": ""
     }
+
+    {
+        "question": "내림차순 정렬하기",
+        "answer": "스트림API 와 람다식을 이용해 구현 또는 Collections 메서드 사용\n",
+        "Arrays.sort(tmp, (a, b) -> b - a); Arrays.sort(tmpInts, (a, b) -> b.compareTo(a)); Arrays.sort(tmpInts, Comparator.reverseOrder());",
+        "hashtags": "#Java #sort #data-type",
+        "createdAt": "2024-08-10",
+        "revisedAt": "",
+        "related-tips": "int[]를 사전순으로 정렬하려면? String[]으로 꼭 바꿔야 하나?"
+    }
+
+
 ]
