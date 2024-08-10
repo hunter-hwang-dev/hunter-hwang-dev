@@ -205,7 +205,42 @@ const quickTips = [
         "createdAt": "2024-08-10",
         "revisedAt": "",
         "related-tips": "int[]를 사전순으로 정렬하려면? String[]으로 꼭 바꿔야 하나?"
+    },
+
+    {
+        "question": "Kotlin에서의 when 문이 java에선 뭐였지!",
+        "answer": "switch(...) {case 1: ...; break; case 2: ...; break; ... default: ...;\n 하지만 switch문은 when과는 달리 범위 지정 안됨",
+        "hashtags": "#Java #switch #Kotlin # when",
+        "createdAt": "2024-08-10",
+        "revisedAt": "",
+        "related-tips": ""
+    },
+  
+    {
+        "question": "Java에서는 max(a, b, c) 이렇게 못 적나 보네!",
+        "answer": "Math.max(num1, Math.max(num2, num3) 는 가능하다.",
+        "hashtags": "#Java #switch #Kotlin # when",
+        "createdAt": "2024-08-10",
+        "revisedAt": "",
+        "related-tips": ""
+    },
+    
+    {
+        "question": "Scanner vs BufferedReader",
+        "answer": "입력값을 파싱할 때 속도 최적화를 위해서는 BufferedReader가 낫다고 한다.\n" + 
+        "Scanner와 System.out.println 대신 BufferedReader와 BufferedWriter를 사용할 수 있다.\n" +
+        "BufferedWriter.flush는 맨 마지막에 한 번만 하면 된다.",
+        "hashtags": "#Java #System.in #Scanner #BufferedReader",
+        "createdAt": "2024-08-10",
+        "revisedAt": "2024-08-11",
+        "related-tips": ""
     }
-
-
+    {
+        "question": "왜 Scanner보다 BufferedReader가 빠른지 간단히 설명해 보자.",
+        "answer": "",
+        "hashtags": "#Java #System.in #Scanner #BufferedReader",
+        "createdAt": "2024-08-11",
+        "revisedAt": "",
+        "related-tips": ""
+    }
 ]
