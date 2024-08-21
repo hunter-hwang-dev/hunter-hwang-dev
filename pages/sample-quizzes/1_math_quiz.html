@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수학 퀴즈</title>
+</head>
+<body>
+    <form id = "quiz1">
+        <p>철수는 사과 2개와 배 3개를 사왔습니다. 그런데 민지가 배 1개를 먹었네요!
+        철수와 민지가 갖고 있는 과일의 총 갯수는 얼마입니까?</p>
+        
+        <input type="radio" id="answer1" name="fruits" value="3">
+        <label for="answer1">3</label><br>
+
+        <input type="radio" id="answer2" name="fruits" value="4">
+        <label for="answer2">4</label><br>
+
+        <input type="radio" id="answer3" name="fruits" value="5">
+        <label for="answer3">5</label><br>
+
+        <input type="radio" id="answer4" name="fruits" value="6">
+        <label for="answer4">6</label><br>
+        
+        <br>
+        <input type="button" value="다음" onclick="goToNextPage()">
+    </form>
+
+    <script>
+        function goToNextPage() {
+            // 여기에 답 확인 코드를 넣을 수 있지만, 단순히 페이지 이동만 처리합니다.
+            window.location.href = "2_eng_quiz.html"; // 다음 페이지로 이동
+        }
+    </script>
+</body>
+</html>
